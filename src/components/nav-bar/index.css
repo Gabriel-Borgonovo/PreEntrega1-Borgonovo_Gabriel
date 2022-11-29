@@ -1,3 +1,160 @@
-header{
-    background-color: aquamarine;
+:root{
+    --color-one:rgb(25, 25, 36);
+    --color-two: #0d6efd;
+    --color-trhee: #FFF;
+}
+
+*{
+    color: var(--color-trhee);
+}
+
+a{
+    text-decoration: none;
+}
+
+h2 a{
+    color: var(--color-trhee);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-two);
+    width: 100%;
+    z-index: 999;
+    height: 55px;
+}
+
+.header_nav{
+    width: 100%;
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all .7s ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.nav_hidden{
+    top: 10px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    overflow: visible;
+}
+
+.nav_ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.719);
+    width: 90%;
+    list-style: none;
+    background-color: var(--color-one);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    z-index: 9;
+}
+
+.nav_ul_li{
+    text-align: center;
+    width: 50%;
+   
+    
+}
+
+.nav_ul_li a:hover{
+    background-color: var(--color-two);
+}
+
+.nav_ul_li a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: all .5s ease;
+}
+
+.button{
+    outline: none;
+    border: none;
+    background:none;
+    width: 70px;
+    text-align: left;
+}
+
+.button i {
+    font-size: 30px;
+    color: var(--color-trhee);
+    font-weight: bold;
+
+}
+
+@media screen and (min-width:760px){ 
+    .button{
+        display: none;
+    }
+
+    .header_nav{
+        width: max-content;
+        position: relative;
+        top: 0;
+        background: none;
+        display: block;
+        visibility: visible;
+        overflow: visible;
+        opacity: 1;
+        transition: none;
+        left: 0;
+        pointer-events: all;
+        height: 100%;
+    }
+
+    .nav_ul{
+        flex-direction: row;
+        width: fit-content;
+        position: relative;
+        background: none;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        height: 100%;
+        transition: none;
+        box-shadow: none;
+    }
+
+    .nav_ul_li{
+        background: none;
+    }
+
+    .nav_ul_li a{
+        color: var(--color-trhee);
+        padding: 20px 10px;
+        height: 100%;
+    }
+
+    .nav_ul_li a:hover{
+        background-color: var(--color-one);
+        box-shadow: 0 0 20px black;
+    }
+
+    .cart-button{
+        order: 1;
+    }
 }
