@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import WidgetCart from '../widget-cart';
-import "./index.css"
+import "./styles.css"
 
 export default function NavBar(){
 
     const [click, setClick] = useState(false);
 
-    const hideNab = () =>{
+    const ShowMenu = () =>{
         setClick(!click); 
         console.log("Estoy haciendo click al menu de hamburguesa");
     } 
@@ -15,7 +15,7 @@ export default function NavBar(){
         <header className="header">
             <h2 className="h2"><a href="index.html">Logo</a></h2>
 
-            <button className="button" onClick={hideNab}>
+            <button className="button" onClick={ShowMenu}>
                 <i className="fa-solid fa-bars burguer_menu"></i>
             </button>
 
