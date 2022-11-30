@@ -8,3 +8,8 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+h1{
+    text-align: center;
+    color: #212121;
+}

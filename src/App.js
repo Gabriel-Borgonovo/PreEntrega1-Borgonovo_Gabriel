@@ -8,6 +8,8 @@ function App() {
     <div className="App">
      <NavBar />
 
+     <h1>Tech house</h1>
+
      <div className='products-container'>
           {PRODUCTS.map((product) => (
             <Card product={product} key={product.name} />
