@@ -1,0 +1,34 @@
+.title-container{
+    height: calc(100vh - 55px);
+    background: url(./compu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 100px;
+}
+
+.gradient{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: inherit;
+}
+
+.gradient h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.gradient h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+}

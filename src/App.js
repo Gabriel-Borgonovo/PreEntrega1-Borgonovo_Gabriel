@@ -2,13 +2,14 @@ import './App.css';
 import NavBar from './components/nav-bar';
 import { PRODUCTS } from './constants/data/products';
 import Card from './components/product-card';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
      <NavBar />
 
-     <h1>Tech house</h1>
+     <ItemListContainer />
 
      <div className='products-container'>
           {PRODUCTS.map((product) => (
