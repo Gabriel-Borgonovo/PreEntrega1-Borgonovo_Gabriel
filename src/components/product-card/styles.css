@@ -1,6 +1,8 @@
 .card {
+    position: relative;
     background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,20 +11,39 @@
     max-width: 300px;
     min-height: 590px;
 }
+
+.card:hover .card-image{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
 .card-image {
     width: 200px;
     height: 200px;
+    position: relative;
+    transition: all .5s ease;
 }
 .card-content {
+    position: relative;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #212121;
 }
 .card-name {
     font-size: 1.2rem;
     color: #212121;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
+
+.card-name:hover{
+    color: rgb(13,110,253) !important; 
+}
+
 .card-description {
     font-size: 0.9rem;
     color: #212121;
@@ -42,41 +63,4 @@
     align-items: center;
     padding: 1rem;
 }
-.card-button-minus {
-    color: #212121;
-    font-size: 1.1rem;
-    font-weight: bold;
-    background-color: #fff;
-    border: 1px solid #212121;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-input {
-    text-align: center;
-}
-.card-input {
-    background-color: #fff;
-    color: #212121;
-    border: 1px solid #212121;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
-    margin:  0 0.5rem;
-}
-.card-button-plus {
-    background-color: #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #212121;
-    border: 1px solid #212121;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+

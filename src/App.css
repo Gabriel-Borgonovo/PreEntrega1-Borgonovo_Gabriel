@@ -1,4 +1,8 @@
 
+.App{
+    background-color: rgb(186, 197, 207);
+}
+
 .products-container{
     display: flex;
     justify-content: center;
