@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PreEntrega1-Borgonovo_Gabriel/static/css/main.83e46135.css",
+    "main.js": "/PreEntrega1-Borgonovo_Gabriel/static/js/main.6b43f954.js",
+    "static/js/787.90e1ef90.chunk.js": "/PreEntrega1-Borgonovo_Gabriel/static/js/787.90e1ef90.chunk.js",
+    "static/media/compu.jpg": "/PreEntrega1-Borgonovo_Gabriel/static/media/compu.e3f8fbf4ab5301eceb6d.jpg",
+    "index.html": "/PreEntrega1-Borgonovo_Gabriel/index.html",
+    "main.83e46135.css.map": "/PreEntrega1-Borgonovo_Gabriel/static/css/main.83e46135.css.map",
+    "main.6b43f954.js.map": "/PreEntrega1-Borgonovo_Gabriel/static/js/main.6b43f954.js.map",
+    "787.90e1ef90.chunk.js.map": "/PreEntrega1-Borgonovo_Gabriel/static/js/787.90e1ef90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83e46135.css",
+    "static/js/main.6b43f954.js"
+  ]
+}
